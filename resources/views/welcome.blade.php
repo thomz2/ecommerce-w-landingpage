@@ -8,5 +8,6 @@
   
     @livewire('navbar')
     @include('hero')
+    @livewire('roupas')
 
 @endsection

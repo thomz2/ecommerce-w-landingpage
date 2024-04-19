@@ -1,4 +1,4 @@
-<div class="max-sm:mt-36 w-full h-[800px] justify-center items-center flex flex-1">
+<section class="max-sm:mt-36 w-full h-[750px] justify-center items-center flex flex-1">
     <div class="sm:w-[60%] flex flex-col sm:flex-row items-center gap-x-10">
         <div class="w-[80%] sm:w-1/2 text-6xl sm:text-8xl pacifico-regular text-neutral-800">
             <h1>As <span class="text-[#9656a1]">melhores</span></h1>
@@ -14,4 +14,4 @@
             <div class="sm:absolute -z-10 max-sm:mt-16 sm:top-4 left-12 rounded-[170px] w-[250px] h-[250px] sm:w-[480px] sm:h-[450px] bg-[#55423d]"></div>
         </div>
     </div>
-</div>
+</section>
