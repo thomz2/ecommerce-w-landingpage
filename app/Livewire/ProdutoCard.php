@@ -8,11 +8,13 @@ class ProdutoCard extends Component
 {
     public $key;
     public $count;
+    public $product;
 
-    public function mount($key)
+    public function mount($roupa)
     {
-        $this->key = $key;
+        $this->key = $roupa->id;
         $this->count = 0;
+        $this->product = $roupa;
     }
 
     public function incrementCount() 
