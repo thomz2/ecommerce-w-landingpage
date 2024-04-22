@@ -4,7 +4,11 @@
         <h3 class="pacifico-regular text-neutral-800 text-2xl pt-4">Blusa PHP</h3>
         <h3 class="text-[#9656a1] py-4 text-2xl font-black">R$ 50,00</h3>
         <div class="hidden text-white">
-            - 0 +
+            <div class="flex flex-row items-center justify-center text-xl gap-x-4">
+                <button wire:click.prevent='decrementCount'>-</button>
+                <p>{{ $this->count }}</p>
+                <button wire:click.prevent='incrementCount'>+</button>
+            </div>
         </div>
     </div>
 </div>
