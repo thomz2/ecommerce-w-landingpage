@@ -44,6 +44,8 @@ Route::middleware('auth')->group(function () {
 
     Route::get('password/confirm', Confirm::class)
         ->name('password.confirm');
+
+    Route::view('cart/index', 'cart-page')->name('cart.index');
 });
 
 Route::middleware('auth')->group(function () {
@@ -51,6 +53,6 @@ Route::middleware('auth')->group(function () {
         ->middleware('signed')
         ->name('verification.verify');
 
-    Route::post('logout', LogoutController::class)
+    Route::get('logout', LogoutController::class)
         ->name('logout');
 });
