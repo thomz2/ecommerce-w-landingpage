@@ -7,6 +7,7 @@
     </style>
   
     @livewire('navbar')
+    @livewire('cart-pop-up')
     @include('hero')
     @livewire('roupas')
 
