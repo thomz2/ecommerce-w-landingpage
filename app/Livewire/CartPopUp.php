@@ -8,7 +8,6 @@ use Livewire\Component;
 
 class CartPopUp extends Component
 {
-    public $hidden = true;
     public $count;
 
     public function mount()
@@ -18,7 +17,6 @@ class CartPopUp extends Component
         } else {
             $carrinho = session()->get('carrinho', null);
             if (!isset($carrinho)) {
-                $this->hidden = true;
                 $this->count = 0;
             } else {
                 $sum = 0;
@@ -26,7 +24,6 @@ class CartPopUp extends Component
                     $sum += $item['quantidade'];
                 }
                 $this->count = $sum;
-                $this->hidden = false;
             }
         }
     }
@@ -35,7 +32,6 @@ class CartPopUp extends Component
     public function increment()
     {
         $this->count++;
-        $this->hidden = false;
     }
 
     #[On('carrinho-decrement')] 
@@ -43,8 +39,6 @@ class CartPopUp extends Component
     {
         if ($this->count > 0) {
             $this->count--;
-        } else {
-            $this->hidden = true;
         } 
     }
 

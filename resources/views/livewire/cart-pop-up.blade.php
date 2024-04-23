@@ -1,4 +1,7 @@
-<a href="#">
+<a 
+    href="#"
+    x-show="$wire.count > 0"
+>
     <div class="fixed bottom-4 right-4 z-20">
         <div class="relative bg-amber-950 p-4 rounded-full">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-7 h-7 stroke-white">
